@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)action:(id)sender {
+    DetailViewController *detail = [[DetailViewController alloc] init];
+    [self presentViewController:detail animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
